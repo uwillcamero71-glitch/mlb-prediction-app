@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/mlb-prediction-app/',
   server: {
     port: 3000,
     proxy: {
@@ -15,6 +16,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: true
+    sourcemap: false
   }
 })
