@@ -13,7 +13,7 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <Router>
+    <Router basename={import.meta.env.DEV ? '/' : '/mlb-prediction-app/'}>
       <div className="flex h-screen bg-gray-900">
         <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
         <div className="flex-1 flex flex-col overflow-hidden">
