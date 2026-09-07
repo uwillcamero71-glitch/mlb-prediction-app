@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FiToggle2, FiBell, FiLock, FiUser, FiLogOut } from 'react-icons/fi'
+import { FiToggleRight, FiBell, FiLock, FiUser, FiLogOut } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
 function Settings() {
@@ -76,7 +76,7 @@ function Settings() {
                 settings.emailNotifications ? 'bg-accent/20 text-accent' : 'bg-gray-700 text-gray-400'
               }`}
             >
-              <FiToggle2 size={24} />
+              <FiToggleRight size={24} />
             </button>
           </div>
           <div className="flex items-center justify-between">
@@ -90,7 +90,7 @@ function Settings() {
                 settings.pushNotifications ? 'bg-accent/20 text-accent' : 'bg-gray-700 text-gray-400'
               }`}
             >
-              <FiToggle2 size={24} />
+              <FiToggleRight size={24} />
             </button>
           </div>
           <div className="flex items-center justify-between">
@@ -104,7 +104,7 @@ function Settings() {
                 settings.highConfidenceOnly ? 'bg-accent/20 text-accent' : 'bg-gray-700 text-gray-400'
               }`}
             >
-              <FiToggle2 size={24} />
+              <FiToggleRight size={24} />
             </button>
           </div>
         </div>
@@ -113,7 +113,7 @@ function Settings() {
       {/* Preferences */}
       <div className="card-lg">
         <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-          <FiToggle2 size={24} />
+          <FiToggleRight size={24} />
           Preferences
         </h2>
         <div className="space-y-4 border-t border-gray-700 pt-4">
@@ -128,7 +128,7 @@ function Settings() {
                 settings.darkMode ? 'bg-accent/20 text-accent' : 'bg-gray-700 text-gray-400'
               }`}
             >
-              <FiToggle2 size={24} />
+              <FiToggleRight size={24} />
             </button>
           </div>
           <div className="flex items-center justify-between">
@@ -142,7 +142,7 @@ function Settings() {
                 settings.autoUpdate ? 'bg-accent/20 text-accent' : 'bg-gray-700 text-gray-400'
               }`}
             >
-              <FiToggle2 size={24} />
+              <FiToggleRight size={24} />
             </button>
           </div>
         </div>
