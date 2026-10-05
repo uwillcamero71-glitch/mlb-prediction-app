@@ -13,12 +13,12 @@ function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false)
 
   return (
-    <Router basename={import.meta.env.DEV ? '/' : '/mlb-prediction-app/'}>
-      <div className="flex h-screen bg-gray-900">
+    <Router>
+      <div className="flex h-screen bg-gray-900 text-white">
         <Sidebar open={sidebarOpen} setOpen={setSidebarOpen} />
         <div className="flex-1 flex flex-col overflow-hidden">
           <Navbar onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
-          <main className="flex-1 overflow-auto">
+          <main className="flex-1 overflow-auto bg-gradient-to-b from-gray-900 to-gray-950">
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/predictions" element={<Predictions />} />
